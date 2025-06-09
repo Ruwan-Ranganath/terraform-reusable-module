@@ -1,4 +1,4 @@
-# modules/vpc/main.tf
+# modules /vpc/main.tf
 resource "local_file" "vpc_config" {
   filename = "${var.vpc_name}-vpc-config.txt"
   content  = <<EOF
