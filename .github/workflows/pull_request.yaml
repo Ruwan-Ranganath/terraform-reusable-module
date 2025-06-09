@@ -276,6 +276,8 @@ jobs:
     needs: [detect, plan]
     if: needs.detect.outputs.is-merge-event == 'true'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     name: 'Dispatch release event'
     steps:
       - uses: actions/download-artifact@v4.1.7
