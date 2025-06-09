@@ -12,7 +12,7 @@ Created: ${timestamp()}
 EOF
 }
 
-resource "local_file" "bucket_policy" {
+resource "local_file" "bucket_policys" {
   count    = var.create_policy ? 1 : 0
   filename = "${var.bucket_name}-s3-policy.json"
   content = jsonencode({
