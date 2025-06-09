@@ -198,7 +198,7 @@ jobs:
         run: zip -vr ../../output/terraform-module.zip *
 
       - name: Upload result artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: '${{ matrix.directory }}'
           path: output
