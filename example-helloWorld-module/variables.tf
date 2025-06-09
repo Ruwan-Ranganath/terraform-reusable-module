@@ -4,7 +4,7 @@ variable "message_a" {
 }
 
 variable "output_filename_a" {
-  description = "The filename for the output file from Modules A."
+  description = "The filename for the output file from Module A."
   type        = string
   default     = "module_a_output.txt"
 }
