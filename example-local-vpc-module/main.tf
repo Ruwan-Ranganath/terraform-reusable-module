@@ -32,6 +32,6 @@ resource "local_file" "route_table" {
 Route Table for VPC: ${var.vpc_name}
 Routes:
 - Local: ${var.cidr_block}
-- Internet Gateway: ${var.enable_internet_gateway ? "0.0.0.0/0 -> igw-${var.vpc_name}" : "Not configured"}
+- Internet Gateway: ${var.enable_internet_gateway ? "0.0.0.0/0 -> igw-${var.vpc_name}" : "Not configured-test"}
 EOF
 }
