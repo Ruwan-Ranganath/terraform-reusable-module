@@ -11,6 +11,7 @@ terraform {
 provider "local" {}
 
 # Refer to remote modules 
+# this is a comment
 
 module "main_vpc" {
   source = "git@github.com:Ruwan-Ranganath/terraform-reusable-module.git?ref=main"
