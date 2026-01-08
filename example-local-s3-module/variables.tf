@@ -55,7 +55,7 @@ variable "tags" {
 }
 
 variable "kms_key_id" {
-  description = "KMS key ID for encryption"
+  description = "KMS key ID for encryptions"
   type        = string
   default     = null
 }
